@@ -1,0 +1,241 @@
+:root {
+    --color-primary: #121212fd;
+    --color-secundary: #e3e0e0;
+    --color-text: #ffffff;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 65px;
+    background-color: var(--color-primary);
+}
+
+/* LOGO */
+
+.header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    margin-left: calc(100% - 95%);
+}
+
+.header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 8px;
+}
+.header a p {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--color-text);
+    padding-left: 5px;
+}
+
+.header div a img {
+    width: auto;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Barra de navegación */
+.header .header_nav {
+    margin-right: 20px;
+}
+
+.header .header_nav ul {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.header .header_nav ul li {
+    width: 100px;
+    height: auto;
+}
+
+.header .header_nav ul li a {
+    color: #c7c7c7;
+    font-size: 1.4rem;
+    border-radius: 10px;
+}
+
+.header .header_nav ul li a:hover {
+    color: var(--color-text);
+}
+
+/* Main */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 95px);
+    background-color: var(--color-secundary);
+}
+
+.container h1 {
+    padding-top: 90px;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.container_talleres {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container_taller {
+    width: 260px;
+    height: 320px;
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 23px rgb(0, 0, 0);
+    transition: all 1s;
+    margin: 10px;
+}
+
+.container_taller:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.container_taller h2 {
+    font-size: 2rem;
+    color: var(--color-text);
+}
+
+.container_taller p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--color-text);
+    background-color: rgba(0, 0, 0, 0.149);
+}
+
+.container_taller a {
+    position: relative;
+    font-size: 1.6rem;
+    background-color: transparent;
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+    background-color: rgba(7, 7, 7, 0.468);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    color: var(--color-text);
+}
+
+.container_taller a::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid greenyellow;
+    border-left: 2px solid greenyellow;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.container_taller a::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-bottom: 2px solid greenyellow;
+    border-right: 2px solid greenyellow;
+    top: -1;
+    left: -1;
+    bottom: 0;
+    right: 0;
+    transition: all 0.3s;
+}
+
+.container_taller a:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s;
+}
+.container_taller a:hover::before {
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s;
+}
+
+.taller-one {
+    background-image: url("../images/figuras.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.taller-two {
+    background-image: url("../images/porcentaje.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.taller-three {
+    background-image: url("../images/forestadistica.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.taller-four {
+    background-image: url("../images/cuadratica.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    height: 30px;
+    background-color: var(--color-primary);
+}
+
+.footer p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 5px;
+    color:rgb(0, 110, 255);
+    letter-spacing: 2px;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: var(--color-text);
+    letter-spacing: normal;
+}

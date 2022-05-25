@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Cuadrática</title>
+    <link rel="shortcut icon" href="../images/cuadratica.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/cuadratica.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a href="../index.html"><img src="../images/jslogo.png" alt="Logo de JavaScript"><p>Practico</p></a>
+        </div>
+        <nav class="header_nav">
+            <ul>
+                <li><a href="../Figuras-Geometricas/figuras.html">Taller #1</a></li>
+                <li><a href="../Descuentos/descuento.html">Taller #2</a></li>
+                <li><a href="../Estadistica/estadistica.html">Taller #3</a></li>
+                <li><a href="#">Extra</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="bg-image">
+        <div class="container">
+            <div>
+                <h1>Media Cuadrática</h1>
+                <h2>Calcula la Media Cuadrática</h2>
+            </div>
+            <div>
+                <form action="">
+                    <label for="inputCuadratica">Agrega los datos a calcular:</label>
+                    <input type="text" id="inputCuadratica">
+                    <button type="button" onclick="calcularCuadratica()">Calcular</button>
+                    <div>Resultado: <p id="pCuadratica"></p></div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="./cuadratica.js"></script>
+</body>
+</html>

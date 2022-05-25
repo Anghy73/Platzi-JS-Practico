@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadística</title>
+    <link rel="shortcut icon" href="../images/forestadistica.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/estadistica.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a href="../index.html"><img src="../images/jslogo.png" alt="Logo de JavaScript"><p>Practico</p></a>
+        </div>
+        <nav class="header_nav">
+            <ul>
+                <li><a href="../Figuras-Geometricas/figuras.html">Taller #1</a></li>
+                <li><a href="../Descuentos/descuento.html">Taller #2</a></li>
+                <li><a href="#">Taller #3</a></li>
+                <li><a href="../media-cuadratica/cuadratica.html">Extra</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="bg-image">
+        <div class="container">
+            <div>
+                <h1>Estadística</h1>
+                <h2>Calcula el Promedio, Mediana y la Moda</h2>
+            </div>
+            <section class="cuadrado">
+                <form action="">
+                    <label for="inputEstadistica">Agrega los datos a calcular:</label>
+                    <input type="text" id="inputEstadistica">
+                    <button onclick="calcularEstaditicas()" type="button">Calcular</button>
+                    <div class="cuadrado_div">
+                        <div class="cuadrado--p">Resultado: <p id="pPromedio"></p></div>
+                        <div class="cuadrado__div--p">
+                            <div>Mediana: <p id="pMediana"></p></div>
+                            <div>Moda: <p id="pModa"></p></div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <script src="./estadistica.js"></script>
+    </main>
+</body>
+</html>

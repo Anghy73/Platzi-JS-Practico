@@ -1,0 +1,229 @@
+:root {
+    --color-primary: #121212fd;
+    --color-secundary: #e3e0e0;
+    --color-text: #ffffff;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 65px;
+    background-color: var(--color-primary);
+}
+
+/* LOGO */
+
+.header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    margin-left: calc(100% - 95%);
+}
+
+.header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 8px;
+}
+.header a p {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--color-text);
+    padding-left: 5px;
+}
+
+.header div a img {
+    width: auto;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Barra de navegación */
+.header .header_nav {
+    margin-right: 20px;
+}
+
+.header .header_nav ul {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.header .header_nav ul li {
+    width: 100px;
+    height: auto;
+}
+
+.header .header_nav ul li a {
+    color: #c7c7c7;
+    font-size: 1.4rem;
+    border-radius: 10px;
+}
+
+.header .header_nav ul li a:hover {
+    color: var(--color-text);
+}
+
+/* Main */
+
+.bg-image {
+    width: 100%;
+    height: calc(100vh - 65px);
+    background-image: url("../images/forestadistica.jpg");
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 65px);
+}
+
+h1 {
+    color: #ba473f;
+    text-align: center;
+    padding: 10px;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: var(--color-text);
+}
+
+.cuadrado {
+    width: 550px;
+    height: 350px;
+    background-color: rgba(6, 6, 6, 0.402);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.cuadrado form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form label {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--color-text);
+    background-color: rgba(0, 0, 0, 0.154);
+}
+
+.container form input {
+    border: none;
+    background-color: black;
+    width: 150px;
+    height: 28px;
+    margin-bottom: 20px;
+    color: var(--color-text);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.container form button {
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    width: 130px;
+    height: 30px;
+    color: var(--color-text);
+    font-size: 1.2rem;
+    padding: 5px 2px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.container form button:hover {
+    border: 1px solid #ba473f;
+}
+
+
+.container .cuadrado_div {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .cuadrado_div > p {
+    background-color: rgba(0, 0, 0, 0.815);
+}
+
+.container form div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.container form .cuadrado--p {
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #7600e7;
+    background-color: rgba(0, 0, 0, 0.847);
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.container .cuadrado_div .cuadrado--p {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.container .cuadrado_div .cuadrado--p p {
+    font-weight: bold;
+    color: #ba473f;
+}
+
+.container .cuadrado__div--p div {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #7600e7;
+    background-color: rgba(0, 0, 0, 0.61);
+    padding: 8px;
+    border-radius: 20px;
+    width: 150px;
+}
+
+.container .cuadrado__div--p div p {
+    color: #ba473f;
+}

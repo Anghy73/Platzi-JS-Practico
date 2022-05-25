@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Promedio</h1>
+    <pre>
+        function calcularMediaAritmetica(lista) {
+            // let sumaLista = 0;
+            // for (let i = 0; i < lista.length; i++) {
+            //     sumaLista = sumaLista + lista[i];
+            // }
+        
+            const sumaLista = lista.reduce(
+                function (valorAcumulado = 0, nuevoElemento) {
+                    return valorAcumulado + nuevoElemento;
+                }
+            );
+        
+            const promedioLista = sumaLista / lista.length;
+        
+            return promedioLista;
+        }
+    </pre>
+
+    <form action="">
+        <label for="inputPromedio">Pone los datos</label>
+        <input type="text" id="inputPromedio">
+        <button type="button" onclick="mostrarResultado()">Click</button>
+    </form>
+    <script src="./promedio.js"></script>
+</body>
+</html>

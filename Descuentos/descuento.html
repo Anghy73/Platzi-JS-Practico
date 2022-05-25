@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../images/porcentaje.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/descuento.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a href="../index.html"><img src="../images/jslogo.png" alt="Logo de JavaScript"><p>Practico</p></a>
+        </div>
+        <nav class="header_nav">
+            <ul>
+                <li><a href="../Figuras-Geometricas/figuras.html">Taller #1</a></li>
+                <li><a href="#">Taller #2</a></li>
+                <li><a href="../Estadistica/estadistica.html">Taller #3</a></li>
+                <li><a href="../media-cuadratica/cuadratica.html">Extra</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="bg-image">
+        <div class="container">
+            <h1>Porcentajes y descuentos</h1>
+            <h2>Calcula el descuento de cualquier valor que tengas</h2>
+            <form action="">
+                <label for="inputPrecio">Precio</label>
+                <input type="number" id="inputPrecio" placeholder="Valor">
+                <!-- <label for="inputCupon">Cupon?</label>
+                <input type="text" id="inputCupon"> -->
+                <label for="inputDescuento">Descuento</label>
+                <input type="number" id="inputDescuento" placeholder="Descuento">
+                <button type="button" onclick="calcularDescuento()">Calcular</button>
+                <div>
+                    <p>Resuldato: <p id="resultadoPorcentaje"></p></p>
+                </div>
+            </form>
+            <!-- <p id="prueba">hola</p>
+            <p id="pruebatwo">holatwo<</p> -->
+        </div>
+    </main>
+    <script src="./descuento.js"></script>
+</body>
+</html>
