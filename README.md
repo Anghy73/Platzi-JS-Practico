@@ -22,4 +22,6 @@ Repository with the content of the js practical course
 - Tercer paso: crear funciones
 - Cuarto paso: integrar JS con HTML
 
-# curso-practico-javascript
+## Vista del Proyecto
+
+![](https://Anghy73/Platzi-JS-Practico/blob/main/images/vistaPrevia.png)
