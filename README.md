@@ -24,4 +24,4 @@ Repository with the content of the js practical course
 
 ## Vista del Proyecto
 
-![](https://Anghy73/Platzi-JS-Practico/blob/main/images/vistaPrevia.png)
+![vistaPrevia](https://user-images.githubusercontent.com/86988806/170181138-b2c44244-d9f9-4b98-be1d-d28364b6b75f.png)
